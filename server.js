@@ -11,7 +11,7 @@ const app = express();
 
 
 const corsOptions = {
-    origin: ["https://chatbox-qc5v.onrender.com"],
+    origin: ["*"],
     methods: ["GET", "POST"],
     allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true,
@@ -29,7 +29,7 @@ let rooms = [];
 //initializs socket,io with https server and cors options
 const io = require('socket.io')(httpServer, {
     cors: {
-        origin: ["https://chatbox-qc5v.onrender.com"],
+        origin: ["*"],
         methods: ['GET', 'POST'],
         credentials: true
     },
