@@ -11,7 +11,7 @@ const app = express();
 
 
 const corsOptions = {
-    origin: "https://chatbox-qc5v.onrender.com",
+    origin: ["https://chatbox-qc5v.onrender.com"],
     methods: ["GET", "POST"],
     allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true,
