@@ -11,7 +11,7 @@ const app = express();
 
 
 const corsOptions = {
-    origin: ["http://localhost:3000", "http://localhost:5002"],
+    origin: ["https://chatbox-qc5v.onrender.com"],
     methods: ["GET", "POST"],
     allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true,
