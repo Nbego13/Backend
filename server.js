@@ -29,7 +29,7 @@ let rooms = [];
 //initializs socket,io with https server and cors options
 const io = require('socket.io')(httpServer, {
     cors: {
-        origin: 'https://chatbox-qc5v.onrender.com',
+        origin: "https://chatbox-qc5v.onrender.com",
         methods: ['GET', 'POST'],
         credentials: true
     },
